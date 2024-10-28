@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
-import './App.css'
+import './Style.css'
 import Form from './components/Form'
 import Header from './components/Header'
 import TODOHero from './components/TODOHero'
 import TODOList from './components/TODOList'
 
 function App() {
-  const [todos, setTodos] = useState([])
+  const [todos, setTodos] = useState([]);
 
   useEffect(() => {
     const storedTodos = localStorage.getItem("todos");
